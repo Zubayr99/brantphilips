@@ -1,0 +1,20 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "qw16EDw1XqjuwxY6wW5jQ"
+uri = "file://artifacts/brant-philips/public/images/office.png"
+type = "image"
+title = "1980s wall street office"
+
+[[generated]]
+id = "5u9YIofWmxihxWm1ZTzQe"
+uri = "file://artifacts/brant-philips/public/images/partner.png"
+type = "image"
+title = "stern wall street executive"
+
+[[generated]]
+id = "gVISWvogbO8ri-VPm2DsZ"
+uri = "file://artifacts/brant-philips/public/images/texture.png"
+type = "image"
+title = "textured ivory paper"

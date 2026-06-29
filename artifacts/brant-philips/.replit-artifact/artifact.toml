@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Brant and Philips"
+version = "1.0.0"
+id = "artifacts/brant-philips"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20260
+
+[services.development]
+run = "pnpm --filter @workspace/brant-philips run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/brant-philips", "run", "build" ]
+publicDir = "artifacts/brant-philips/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20260"
+BASE_PATH = "/"
